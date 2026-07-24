@@ -3,15 +3,46 @@ project:
 
 website:
   title: "Ecological Modelling with R"
-  description: "An open educational project in ecological modelling, statistics and reproducible data analysis."
+  description: "An open educational course on statistics, data analysis and ecological modelling with R."
   
   navbar:
     left:
       - href: index.qmd
         text: Home
+        
+      - text: Lectures
+        menu:
+          - text: "01. Introduction to ecological modelling"
+            href: lectures/01-introduction.qmd
+            
+      - text: Labs
+        menu:
+          - text: "01. Getting started with R and Quarto"
+            href: labs/01-r-quarto.qmd
+            
+      - text: Resources
+        menu:
+          - text: Books and references
+            href: references/references.qmd
+
+  sidebar:
+    - title: "Course materials"
+      style: "docked"
+      contents:
+        - index.qmd
+        - section: "Lectures"
+          contents:
+            - lectures/*.qmd
+        - section: "Labs"
+          contents:
+            - labs/*.qmd
+        - section: "Resources"
+          contents:
+            - references/*.qmd
 
 format:
   html:
     theme: cosmo
     toc: true
     code-fold: true
+    html-math-method: katex
