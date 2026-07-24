@@ -1,0 +1,34 @@
+---
+title: "Ecological Modelling with R"
+subtitle: "From data to ecological understanding"
+---
+
+# Welcome
+
+This repository contains the developing materials for an open educational course on ecological modelling with R.
+
+The course introduces statistical thinking, data analysis and modelling approaches for understanding ecological processes.
+
+# Course philosophy
+
+> From observation to data, from data to models, from models to ecological understanding.
+
+The main focus is not mathematical complexity, but understanding:
+
+- how ecological questions are translated into statistical models;
+- how data are explored and visualized;
+- how models are built and evaluated;
+- how results are interpreted.
+
+# Learning environment
+
+The course is developed using:
+
+- R
+- Quarto
+- GitHub
+- reproducible workflows
+
+# Current status
+
+The project is under development.
