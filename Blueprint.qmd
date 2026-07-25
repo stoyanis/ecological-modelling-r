@@ -6,21 +6,24 @@ format:
   html:
     toc: true
     number-sections: true
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 # Course philosophy
 
-Ecological modelling is not only a collection of statistical methods.
-It is a way of thinking about ecological systems, observations, uncertainty
+Ecological modelling is not only a collection of statistical methods. It
+is a way of thinking about ecological systems, observations, uncertainty
 and evidence.
 
 The main goal of this course is to develop statistical and computational
-thinking necessary for understanding ecological data and building interpretable
-models.
+thinking necessary for understanding ecological data and building
+interpretable models.
 
 The course follows a generative perspective:
 
-```
+```         
 Ecological process
         ↓
 Data generation
@@ -34,16 +37,15 @@ Inference and prediction
 
 Students will learn not only how to fit models, but also how models can
 generate data and how observations can be used to evaluate competing
-explanations.
-This approach emphasizes generative thinking: understanding how ecological
-processes produce observations and how models can be used to reconstruct
-those processes.
+explanations. This approach emphasizes generative thinking:
+understanding how ecological processes produce observations and how
+models can be used to reconstruct those processes.
 
 # Conceptual progression
 
 The course follows the transition:
 
-```
+```         
 Ecological questions
 
         ↓
@@ -95,7 +97,8 @@ After completing the course, students should be able to:
 
 # Pedagogical approach
 
-The course is built around a generative approach to ecological modelling.
+The course is built around a generative approach to ecological
+modelling.
 
 Students will move from simple ecological systems, where the process
 generating the data is known, towards increasingly complex situations,
@@ -113,8 +116,9 @@ models and uncertainty.
 Simulation is used throughout the course as a tool for understanding
 ecological processes, probability and statistical inference.
 
-Students will create artificial ecological datasets from known models and
-then analyse these datasets as if the generating process was unknown.
+Students will create artificial ecological datasets from known models
+and then analyse these datasets as if the generating process was
+unknown.
 
 This allows them to understand:
 
@@ -123,25 +127,28 @@ This allows them to understand:
 - how statistical models recover underlying relationships;
 - how uncertainty emerges from limited observations.
 
-The general workflow is:
+The general workflow is: 
+
+```         
 Ecological process
 
-    ↓
+↓
 
 Generative model
-
-    ↓
+        
+↓
 
 Simulated observations
 
-    ↓
+↓
 
 Statistical model
 
-    ↓
+↓
 
 Inference about the process
 
+```
 # Dataset philosophy
 
 The course will use three complementary types of datasets:
@@ -190,7 +197,7 @@ ecological process and a possible explanation of observed patterns.
 - mechanistic versus statistical approaches;
 - introduction to R, RStudio and Quarto.
 
----
+------------------------------------------------------------------------
 
 ## Module 2: Ecological data and variation
 
@@ -203,10 +210,12 @@ ecological process and a possible explanation of observed patterns.
   - categorical.
 
 - Structure of ecological datasets;
+
 - Data organisation;
+
 - Exploration and visualization.
 
----
+------------------------------------------------------------------------
 
 ## Module 3: Probability distributions and data generation
 
@@ -234,7 +243,7 @@ ecological process and a possible explanation of observed patterns.
 - Simulation as a tool for understanding uncertainty;
 - Comparing known generating models with estimated models.
 
----
+------------------------------------------------------------------------
 
 ## Module 4: Likelihood and statistical inference
 
@@ -251,7 +260,7 @@ ecological process and a possible explanation of observed patterns.
 - Bootstrap approaches;
 - Bayesian credible intervals.
 
----
+------------------------------------------------------------------------
 
 ## Module 5: Linear models
 
@@ -263,7 +272,7 @@ ecological process and a possible explanation of observed patterns.
 - Residuals;
 - Interpretation.
 
----
+------------------------------------------------------------------------
 
 ## Module 6: Generalized linear models
 
@@ -273,7 +282,7 @@ ecological process and a possible explanation of observed patterns.
 - Link functions;
 - Gaussian, Binomial and Poisson models.
 
----
+------------------------------------------------------------------------
 
 ## Module 7: Hierarchical ecological models
 
@@ -284,7 +293,7 @@ ecological process and a possible explanation of observed patterns.
 - Mixed models;
 - GLMMs.
 
----
+------------------------------------------------------------------------
 
 ## Module 8: Bayesian ecological modelling
 
@@ -295,7 +304,7 @@ ecological process and a possible explanation of observed patterns.
 - Posterior distributions;
 - Hierarchical Bayesian models.
 
----
+------------------------------------------------------------------------
 
 ## Module 9: Reproducible ecological research
 
@@ -312,8 +321,8 @@ ecological process and a possible explanation of observed patterns.
 Throughout the course, R, Quarto and GitHub will be used to develop
 transparent and reproducible ecological analyses.
 
-Students will learn not only statistical methods, but also how to organise,
-document and communicate scientific workflows.
+Students will learn not only statistical methods, but also how to
+organise, document and communicate scientific workflows.
 
 Students will explore:
 
