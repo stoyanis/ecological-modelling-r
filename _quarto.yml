@@ -17,8 +17,8 @@ website:
             
       - text: Labs
         menu:
-          - text: "01. Getting started with R and Quarto"
-            href: labs/01-r-quarto.qmd
+          - text: "01. Getting Started with R and First Ecological Simulation"
+            href: labs/01-r-basics-and-first-simulation.qmd
             
       - text: Resources
         menu:

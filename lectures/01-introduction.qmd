@@ -1,0 +1,272 @@
+---
+title: "Introduction to Ecological Modelling"
+subtitle: "From ecological questions to quantitative models"
+author: "Stoyan Stoyanov"
+format:
+  html:
+    toc: true
+    number-sections: true
+---
+
+# Learning goals
+
+After this lecture, students should understand:
+
+- why ecological systems require models;
+- what a model represents;
+- the difference between ecological processes and observations;
+- why variation is a fundamental property of ecological data;
+- why simulation is useful for understanding ecological models.
+
+# Why do we model ecological systems?
+
+Ecology studies complex systems.
+
+Observed ecological patterns are the result of many interacting processes:
+
+- biological interactions;
+- environmental conditions;
+- spatial and temporal variation;
+- historical processes;
+- measurement limitations.
+
+Because we cannot observe every process directly, we use models as simplified representations of ecological systems.
+
+A model is not a copy of reality.
+
+A model is a structured explanation of how we think a system works.
+
+# From ecological questions to models
+
+Ecological research usually begins with a question.
+
+For example:
+
+> Does fish growth depend on age?
+
+A simple conceptual model is:
+
+```
+Age
+
+ ↓
+
+Growth process
+
+ ↓
+
+Fish mass
+```
+
+The model expresses an ecological hypothesis:
+
+Older individuals tend to be larger.
+
+However, real observations are never perfectly determined by one factor.
+
+Two fish of the same age will not necessarily have the same mass.
+
+Why?
+
+Because individuals differ.
+
+They may experience:
+
+- different food availability;
+- different environmental conditions;
+- different genetic backgrounds;
+- random events.
+
+Therefore, observations contain variation.
+
+# Process, observation and variation
+
+A central idea of this course is the distinction between:
+
+- the ecological process;
+- the observations produced by this process.
+
+The general framework is:
+
+```
+Ecological process
+
+        ↓
+
+Variation
+
+        ↓
+
+Observed data
+```
+
+The observed dataset is not the ecological process itself.
+
+It is the result of the process plus uncertainty.
+
+This distinction is fundamental for ecological modelling.
+
+# The generative perspective
+
+A statistical model is not only a mathematical description of observed patterns.
+
+It can also represent a possible mechanism by which data are generated.
+
+The main question throughout this course will be:
+
+> How could these data have been generated?
+
+The general workflow is:
+
+```
+Ecological process
+
+        ↓
+
+Probability model
+
+        ↓
+
+Simulated observations
+
+        ↓
+
+Statistical model
+
+        ↓
+
+Inference
+```
+
+If we understand how data are generated, we can better understand how models explain observations.
+
+# Why simulation?
+
+Simulation allows us to create artificial ecological systems.
+
+In a simulated world we know:
+
+- the underlying process;
+- the true parameters;
+- the amount of variation.
+
+Then we can ask:
+
+> Can our statistical methods recover the process that generated the data?
+
+This is impossible to know with most real datasets because the true generating process is unknown.
+
+# Example: a simulated fish population
+
+Imagine a population of fish.
+
+The ecological assumption is:
+
+> Fish mass increases with age.
+
+A simple deterministic relationship might be:
+
+```
+Age → Expected mass
+```
+
+For example:
+
+```
+Age 1 → small fish
+
+Age 5 → larger fish
+
+Age 10 → larger fish
+```
+
+But a real population contains variation:
+
+```
+Expected mass
+
+       +
+
+Individual variation
+
+       +
+
+Measurement uncertainty
+
+       ↓
+
+Observed mass
+```
+
+The result is a dataset where a general pattern exists, but individual observations differ.
+
+# Models as explanations
+
+When we analyse ecological data, we are not only asking:
+
+> Is there a relationship?
+
+We are asking:
+
+> Is this model a plausible explanation of how the data were generated?
+
+Different models represent different explanations.
+
+For example:
+
+```
+Model A:
+
+Age → Fish mass
+
+
+Model B:
+
+Age + temperature → Fish mass
+
+
+Model C:
+
+Age + temperature + food availability → Fish mass
+```
+
+The challenge of ecological modelling is to compare explanations while accounting for uncertainty.
+
+# From simple to complex ecological systems
+
+Throughout this course we will gradually increase the complexity of our models.
+
+The progression will be:
+
+```
+Simple simulated systems
+
+        ↓
+
+Multiple environmental drivers
+
+        ↓
+
+Hierarchical ecological processes
+
+        ↓
+
+Bayesian ecological models
+
+        ↓
+
+Real ecological datasets
+```
+
+The goal is not to learn isolated statistical techniques.
+
+The goal is to understand how ecological questions can be translated into models and how models can help us learn about nature.
+
+# Before the next practical session
+
+In the first laboratory exercise we will:
+
+- prepare the R environment;
+- create our first objects and datasets;
+- simulate observations from a simple ecological model;
+- explore how variation influences ecological data.
