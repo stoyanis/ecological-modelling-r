@@ -35,6 +35,9 @@ Inference and prediction
 Students will learn not only how to fit models, but also how models can
 generate data and how observations can be used to evaluate competing
 explanations.
+This approach emphasizes generative thinking: understanding how ecological
+processes produce observations and how models can be used to reconstruct
+those processes.
 
 # Conceptual progression
 
@@ -65,7 +68,11 @@ Models of increasing complexity
 
         ↓
 
-Uncertainty and prediction
+Model evaluation and uncertainty
+
+        ↓
+
+Prediction and decision making
 
         ↓
 
@@ -86,6 +93,80 @@ After completing the course, students should be able to:
 - quantify uncertainty;
 - develop reproducible analyses using R and Quarto.
 
+# Pedagogical approach
+
+The course is built around a generative approach to ecological modelling.
+
+Students will move from simple ecological systems, where the process
+generating the data is known, towards increasingly complex situations,
+where the underlying processes must be inferred from observations.
+
+The central question throughout the course is:
+
+> How could these data have been generated?
+
+This perspective connects ecological theory, probability, statistical
+models and uncertainty.
+
+# Simulation as a learning framework
+
+Simulation is used throughout the course as a tool for understanding
+ecological processes, probability and statistical inference.
+
+Students will create artificial ecological datasets from known models and
+then analyse these datasets as if the generating process was unknown.
+
+This allows them to understand:
+
+- how variation arises;
+- how probability distributions describe ecological processes;
+- how statistical models recover underlying relationships;
+- how uncertainty emerges from limited observations.
+
+The general workflow is:
+Ecological process
+
+    ↓
+
+Generative model
+
+    ↓
+
+Simulated observations
+
+    ↓
+
+Statistical model
+
+    ↓
+
+Inference about the process
+
+# Dataset philosophy
+
+The course will use three complementary types of datasets:
+
+## Simulated datasets
+
+Used for understanding statistical concepts when the generating process
+is known.
+
+Examples:
+
+- fish growth;
+- species richness along environmental gradients;
+- population abundance.
+
+## Semi-simulated ecological datasets
+
+Based on realistic ecological assumptions and environmental gradients,
+while keeping the underlying process partially controlled.
+
+## Real ecological datasets
+
+Used to apply modelling approaches to genuine ecological questions where
+the generating process is unknown.
+
 # Course structure
 
 ## Module 1: Introduction to ecological modelling
@@ -95,6 +176,11 @@ After completing the course, students should be able to:
 - What is a model?
 - Why do we need models in ecology?
 - Description, explanation and prediction.
+
+### Central idea
+
+A model is not only a statistical tool. It is a representation of an
+ecological process and a possible explanation of observed patterns.
 
 ### Topics
 
@@ -145,6 +231,8 @@ After completing the course, students should be able to:
 - Generating ecological datasets;
 - Connecting processes and observations;
 - Understanding model assumptions.
+- Simulation as a tool for understanding uncertainty;
+- Comparing known generating models with estimated models.
 
 ---
 
@@ -219,9 +307,13 @@ After completing the course, students should be able to:
 - Data and code organisation;
 - Reproducible workflows.
 
-# Computational philosophy
+# Reproducible computational workflow
 
-Throughout the course, simulations will be used as a learning tool.
+Throughout the course, R, Quarto and GitHub will be used to develop
+transparent and reproducible ecological analyses.
+
+Students will learn not only statistical methods, but also how to organise,
+document and communicate scientific workflows.
 
 Students will explore:
 
