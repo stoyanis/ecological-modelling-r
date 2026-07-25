@@ -1,0 +1,231 @@
+---
+title: "Ecological Modelling with R"
+subtitle: "Course Blueprint"
+author: "Stoyan Stoyanov"
+format:
+  html:
+    toc: true
+    number-sections: true
+---
+
+# Course philosophy
+
+Ecological modelling is not only a collection of statistical methods.
+It is a way of thinking about ecological systems, observations, uncertainty
+and evidence.
+
+The main goal of this course is to develop statistical and computational
+thinking necessary for understanding ecological data and building interpretable
+models.
+
+The course follows a generative perspective:
+
+```
+Ecological process
+        ↓
+Data generation
+        ↓
+Probability model
+        ↓
+Statistical model
+        ↓
+Inference and prediction
+```
+
+Students will learn not only how to fit models, but also how models can
+generate data and how observations can be used to evaluate competing
+explanations.
+
+# Conceptual progression
+
+The course follows the transition:
+
+```
+Ecological questions
+
+        ↓
+
+Data organisation and exploration
+
+        ↓
+
+Variation and probability distributions
+
+        ↓
+
+Data generation and simulation
+
+        ↓
+
+Likelihood and statistical inference
+
+        ↓
+
+Models of increasing complexity
+
+        ↓
+
+Uncertainty and prediction
+
+        ↓
+
+Bayesian hierarchical thinking
+```
+
+# Learning objectives
+
+After completing the course, students should be able to:
+
+- understand the philosophy of ecological models;
+- organize and explore ecological datasets;
+- identify different types of ecological variables;
+- understand probability distributions as models of variation;
+- simulate ecological data using R;
+- explain the relationship between data and models;
+- fit and interpret statistical models;
+- quantify uncertainty;
+- develop reproducible analyses using R and Quarto.
+
+# Course structure
+
+## Module 1: Introduction to ecological modelling
+
+### Questions
+
+- What is a model?
+- Why do we need models in ecology?
+- Description, explanation and prediction.
+
+### Topics
+
+- ecological hypotheses;
+- conceptual models;
+- statistical models;
+- mechanistic versus statistical approaches;
+- introduction to R, RStudio and Quarto.
+
+---
+
+## Module 2: Ecological data and variation
+
+### Topics
+
+- Types of ecological variables:
+
+  - continuous;
+  - discrete;
+  - categorical.
+
+- Structure of ecological datasets;
+- Data organisation;
+- Exploration and visualization.
+
+---
+
+## Module 3: Probability distributions and data generation
+
+### Topics
+
+- Random variation in ecological systems;
+- Probability distributions as models of variation.
+
+### Discrete distributions
+
+- Bernoulli;
+- Binomial;
+- Poisson.
+
+### Continuous distributions
+
+- Normal;
+- Gamma.
+
+### Simulation
+
+- Generating ecological datasets;
+- Connecting processes and observations;
+- Understanding model assumptions.
+
+---
+
+## Module 4: Likelihood and statistical inference
+
+### Topics
+
+- Parameters and estimates;
+- Likelihood;
+- Maximum likelihood estimation;
+- Model comparison.
+
+### Uncertainty
+
+- Confidence intervals;
+- Bootstrap approaches;
+- Bayesian credible intervals.
+
+---
+
+## Module 5: Linear models
+
+### Topics
+
+- Response and predictor variables;
+- Linear relationships;
+- Model assumptions;
+- Residuals;
+- Interpretation.
+
+---
+
+## Module 6: Generalized linear models
+
+### Topics
+
+- Why linear models are not always appropriate;
+- Link functions;
+- Gaussian, Binomial and Poisson models.
+
+---
+
+## Module 7: Hierarchical ecological models
+
+### Topics
+
+- Structure of ecological datasets;
+- Random effects;
+- Mixed models;
+- GLMMs.
+
+---
+
+## Module 8: Bayesian ecological modelling
+
+### Topics
+
+- Bayesian thinking;
+- Prior information;
+- Posterior distributions;
+- Hierarchical Bayesian models.
+
+---
+
+## Module 9: Reproducible ecological research
+
+### Topics
+
+- R projects;
+- Git and GitHub;
+- Quarto;
+- Data and code organisation;
+- Reproducible workflows.
+
+# Computational philosophy
+
+Throughout the course, simulations will be used as a learning tool.
+
+Students will explore:
+
+- how ecological data can be generated;
+- how statistical models recover underlying processes;
+- how uncertainty arises;
+- why different models lead to different interpretations.
